@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="image-hero">
+    <div class="logo-section">
+      <img src="assets/odin-logo.png" alt="">
+      <h1>ODIN</h1>
+    </div>
+    <footer>
+      Photo de <a href="https://unsplash.com/fr/@yannis_b?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yannis Bontempi</a> sur <a href="https://unsplash.com/fr/photos/un-groupe-de-feuilles-vertes-Q0GCtNTQpKE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer>
+  </div>
+  <div class="main-section">
+    <section class="description">
+      <p class="first-paragraph">
+        This is not a real online service! You know you need something like this in your life to help you to realize your deepest dreams.
+        Sign up now to get started.
+      </p>
+      <p class="second-paragraph">
+        You know you want to.
+      </p>
+    </section>
+    
+    <div class="form">
+      <legend>Let's do this!</legend>
+      <form action="" method="post">
+        <fieldset>
+          <div class="field">
+            <label for="firstname">firstname</label>
+            <input type="text" name="firstname" id="firstname">
+          </div>
+
+          <div class="field">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+          </div>
+
+          <div class="field">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" 
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+              <div class="error">* Passwords do not match</div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="field">
+            <label for="lastname">lastname</label>
+            <input type="text" name="lastname" id="lastname">
+          </div>
+
+          <div class="field">
+            <label for="phone">phone number</label>
+            <input type="text" name="phone" id="phone">
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">confirm password</label>
+            <input type="password" name="confirm-password" id="confirm-password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="validation">
+      <button type="submit">Create Account</button>
+
+      <p>Already have an account? <a href="#">Log in</a></p>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
